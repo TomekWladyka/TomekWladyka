@@ -340,12 +340,15 @@ a:visited {
 }
 
 .about-me {
-  width: 90%;
-  height: 650px;
+  width: 85%;
   transform: translate(0, -12.5%);
   padding: 20px;
   border: 5px var(--clr-border) dotted;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
+}
+
+.about-me a {
+  color: var(--clr-main);
 }
 
 #contact {
@@ -414,6 +417,17 @@ a:visited {
     left: calc(25% / 4 - 5px);
   }
 
+  .big-card {
+    border-radius: 1vmin;
+    width: 26vw;
+  }
+
+  .small-card {
+    width: 16vw;
+    border-radius: 2vmin;
+    transform: translate(50px, 10px) rotate(0);
+  }
+
   #about {
     padding-left: calc(25% / 2 - 5px);
     width: calc(100% - (25% / 2 - 5px));
@@ -422,7 +436,6 @@ a:visited {
 
   .about-me {
     font-size: 0.75rem;
-    height: 550px;
     transform: translate(0, -2.5%);
   }
 
