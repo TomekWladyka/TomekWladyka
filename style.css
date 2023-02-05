@@ -75,28 +75,20 @@ a:visited {
   border-right: 5px var(--clr-border) solid;
 }
 
-.autor {
+.logo {
   height: 90vh;
+  width: 100%;
   font-size: 2rem;
 }
 
-.media-circle {
-  position: absolute;
-  top: 50%;
-  right: 50.5%;
-  transform: translate(0, calc(-50% + 5vh));
-  width: 350px;
-  height: 350px;
-  border-radius: 500px;
-  border: 5px var(--clr-border) dotted;
+.autor {
+  height: 15%;
+  border-top: 5px var(--clr-border) dotted;
+  position: relative;
 }
 
 .media {
   list-style-type: none;
-  position: relative;
-  width: 100%;
-  height: 100%;
-  border-radius: 500px;
 }
 
 .media-icon {
@@ -107,37 +99,37 @@ a:visited {
 
 .media-link1 {
   position: absolute;
-  top: -7.5%;
+  top: -50%;
   right: 50%;
-  transform: translate(50%);
+  transform: translate(50%, 50%);
 }
 
 .media-link2 {
   position: absolute;
-  top: 7.5%;
-  right: 90%;
-  transform: translate(50%);
+  top: -50%;
+  right: 75%;
+  transform: translate(75%, 50%);
 }
 
 .media-link3 {
   position: absolute;
-  top: 50%;
+  top: -50%;
   right: 100%;
-  transform: translate(50%, -50%);
+  transform: translate(100%, 50%);
 }
 
 .media-link4 {
   position: absolute;
-  top: 74%;
-  right: 87.5%;
-  transform: translate(50%, 50%);
+  top: -50%;
+  right: 25%;
+  transform: translate(25%, 50%);
 }
 
 .media-link5 {
   position: absolute;
-  top: 92.25%;
-  right: 50%;
-  transform: translate(50%, 25%);
+  top: -50%;
+  right: 0;
+  transform: translate(0, 50%);
 }
 
 #line {
@@ -362,6 +354,7 @@ a:visited {
   height: 15vh;
   position: absolute;
   bottom: -260.5vh;
+  font-size: 1rem;
 }
 
 @keyframes load {
@@ -397,21 +390,24 @@ a:visited {
     height: 200px;
   }
 
-  .media-link1 {
-    top: -14%;
+  .logo {
+    font-size: 1.5rem;
   }
 
-  .media-link3 {
-    right: 110%;
+  .autor {
+    height: 15%;
+    border-top: 5px var(--clr-border) dotted;
+    position: relative;
   }
 
-  .media-link4 {
-    top: 60%;
-    right: 90%;
+  .media {
+    list-style-type: none;
   }
 
-  .media-link5 {
-    top: 85.25%;
+  .media-icon {
+    width: 25px;
+    height: 25px;
+    font-size: 25px;
   }
 
   #line {
@@ -428,5 +424,9 @@ a:visited {
     font-size: 0.75rem;
     height: 550px;
     transform: translate(0, -2.5%);
+  }
+
+  .copy {
+    font-size: 0.5rem;
   }
 }
