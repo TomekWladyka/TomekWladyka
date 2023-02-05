@@ -77,6 +77,7 @@ a:visited {
 
 .autor {
   height: 90vh;
+  font-size: 2rem;
 }
 
 .media-circle {
@@ -84,8 +85,8 @@ a:visited {
   top: 50%;
   right: 50.5%;
   transform: translate(0, calc(-50% + 5vh));
-  width: 20%;
-  height: 40%;
+  width: 350px;
+  height: 350px;
   border-radius: 500px;
   border: 5px var(--clr-border) dotted;
 }
@@ -140,7 +141,6 @@ a:visited {
 }
 
 #line {
-  background-color: red;
   width: 5px;
   height: 350vh;
   position: absolute;
@@ -384,4 +384,45 @@ a:visited {
   animation: load 1.2s infinite 0s ease-in-out;
   animation-direction: alternate;
   text-shadow: 0 0 1px white;
+}
+
+@media screen and (max-width: 767px) {
+  .autor {
+    font-size: 0.75rem;
+  }
+
+  .media-circle {
+    transform: translate(50%, calc(-50% + 5vh));
+    width: 200px;
+    height: 200px;
+  }
+
+  .media-link1 {
+    top: -14%;
+  }
+
+  .media-link4 {
+    top: 60%;
+    right: 90%;
+  }
+
+  .media-link5 {
+    top: 85.25%;
+  }
+
+  #line {
+    left: calc(25% / 4 - 5px);
+  }
+
+  #about {
+    padding-left: calc(25% / 2 - 5px);
+    width: calc(100% - (25% / 2 - 5px));
+    height: 100vh;
+  }
+
+  .about-me {
+    font-size: 13.5px;
+    height: 500px;
+    transform: translate(0, -2.5%);
+  }
 }
