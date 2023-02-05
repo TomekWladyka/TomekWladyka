@@ -382,6 +382,15 @@ a:visited {
   text-shadow: 0 0 1px white;
 }
 
+#go-up {
+  position: fixed;
+  bottom: 0%;
+  right: 0;
+  height: 50px;
+  font-size: 50px;
+  rotate: 90deg;
+}
+
 @media screen and (max-width: 767px) {
   .autor {
     font-size: 0.75rem;
@@ -441,5 +450,11 @@ a:visited {
 
   .copy {
     font-size: 0.5rem;
+  }
+
+  #go-up {
+    width: 25px;
+    height: 25px;
+    font-size: 25px;
   }
 }
