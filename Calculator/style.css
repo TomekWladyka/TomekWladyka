@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #2c2c2c;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+  color: white;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#display {
+  width: 75%;
+  height: 30px;
+  margin-bottom: 10px;
+  color: rgb(255, 255, 255);
+  background-color: #a084dc;
+  border: 5px rgb(33, 31, 31) solid;
+  font-size: 20px;
+  border-radius: 15px;
+
+  /* #645cbb,
+    #a084dc,
+    #bface2,
+    #ebc7e6 */
+}
+
+.button {
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  border-radius: 25px;
+  border: 5px rgb(33, 31, 31) solid;
+  background-color: #bface2;
+  width: 120px;
+  height: 100px;
+  margin-bottom: 2.5px;
+}
+
+.button:active {
+  color: rgb(211, 199, 199);
+  border: 5px rgb(0, 0, 0) solid;
+  background-color: #9974de;
+}
+
+.calculator {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 25px;
+  box-shadow: 0px 0px 50px 0px rgb(51, 52, 56);
+}
+
+#go-back {
+  position: fixed;
+  bottom: 0%;
+  right: 0;
+  height: 50px;
+  font-size: 50px;
+  rotate: 90deg;
+}
+
+@media screen and (max-width: 767px) {
+  #display {
+    width: 60%;
+    height: 20%;
+  }
+  .button {
+    font-size: 20px;
+    width: 20%;
+    height: 20%;
+  }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+  #display {
+    width: 60%;
+    height: 30px;
+  }
+  .button {
+    font-size: 20px;
+    width: 75px;
+    height: 75px;
+  }
+}
